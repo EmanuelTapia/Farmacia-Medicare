@@ -1,12 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Inicio | Farmacia Medicare</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="icon"  href="./icon/square-plus-solid.png">
+        <link rel="icon"  href="./icon/logo.png">
 	</head>
 	<body class="flex h-dvh w-dvh flex-col">
 		
@@ -16,12 +16,12 @@
                     <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
                 </div>
                 <div class="flex w-1/6 justify-end">
-                    <div class="flex items-center mx-10">
-                        <i class="fa-solid fa-user fa-lg text-slate-50 mx-3"></i>
-                        <label class="text-slate-50 font-sans text-xl mt-1" for="">Usuario</label>
+                    <div class="flex items-center mx-10 space-x-2">
+                        <img src="images/btn-perfil.svg" alt="btn-perfil" width="30em">
+                        <label class="text-slate-50 font-serif text-xl mt-1" for="">Usuario</label>
                     </div>
                     <div class="flex items-center">
-                        <a href="./login.html"><i class="fa-solid fa-right-from-bracket fa-lg text-slate-50"></i></a>
+                        <a href="./login.html"><img src="images/btn-salir.svg" alt="btn-salir" width="35px"></a>
                     </div>
                 </div>
             </nav>
@@ -29,19 +29,16 @@
 
         <main class="flex h-full w-full">
             <div class="flex flex-col bg-[#085394] ">
-                <div class="flex justify-center text-slate-50 font-mono text-3xl m-8">
-                    <h2>Medicare</h2>
-                </div>
-                <div class="flex justify-center text-4xl text-slate-50 m-8">
-                    <i class="fa-solid fa-square-plus fa-2xl"></i>
+                <div class="flex justify-center items-center h-[25em] text-slate-50">
+                    <a href="./index.html"><img src="./icon/logo.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
 
-                <div class="text-slate-50 font-mono text-xl mt-16 h-full">
+                <div class="text-slate-50 font-mono text-xl mt-5 h-full">
                     <ul class="flex flex-col list-none">
-                        <il class="p-3  hover:bg-[#2B78E4]"><a href="#"><i class="fa-solid fa-house pr-2"></i>Menú</a></il>
-                        <il class="p-3 hover:bg-[#2B78E4]"><a href="#"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</a></il>
-                        <il class="p-3 hover:bg-[#2B78E4]"><a href="#"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</a></il>
-                        <il class="p-3 hover:bg-[#2B78E4]"><a href="#"><i class="fa-solid fa-file pr-2"></i>Reportes</a></il>
+                        <a href="./menu.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
+                        <a href="./ventas.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
+                        <a href="./mantenmiento.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
+                        <a href="./reportes.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
@@ -54,13 +51,13 @@
                     </div>
                     <div class="flex flex-row items-center h-full w-full px-[5vh] space-x-[5vh]">
                         <div class="flex flex-col items-center border-4 bg-[#FFE2E2] border-[#FF0000] w-3/12 h-[70%] rounded-xl basis-1/4 text-[#FF0000]">
+                            
                             <div class="flex justify-center items-center h-[50%] w-full">
                                 <h2>8</h2>
                             </div>
                             <div class="flex justify-center items-center h-[50%] w-full">
                                 <p class="font-semibold text-[4vh]">Clientes</p>
                             </div>
-                            
                         </div>
                         <div class="box-border border-4 bg-[#D9FFDB] border-[#00FF00] w-3/12 h-[70%] rounded-xl basis-1/4 text-[#00FF00]">
                             <div class="flex justify-center items-center h-[50%] w-full">
@@ -95,17 +92,18 @@
                         Mantenimiento
                     </div>
                     <div class="flex flex-row items-center justify-start h-full w-full text-[#085394] space-x-[10vh] pl-5 ">
-                        <div class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        
+                        <div id="cliente" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-solid fa-user"></i>
-                            </div>
+                            </div> 
                                 
                             <div class="h-[30%] w-full flex justify-center items-center">
                                 <p class="font-normal text-[4vh]">Cliente</p>
                             </div>
                         </div>
 
-                        <div class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        <div  id="producto" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </div>
@@ -115,7 +113,7 @@
                             </div>
                         </div>
 
-                        <div class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        <div id="empleado" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-regular fa-address-book"></i>
                             </div>
@@ -125,7 +123,7 @@
                             </div>
                         </div>
 
-                        <div class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        <div id="proveedor" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-regular fa-building"></i>
                             </div>
@@ -145,7 +143,7 @@
                             Ventas
                         </div>
                         <div class="flex items-center h-full w-full text-[#085394]">
-                            <div class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
+                            <div id="ventas" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
                                 <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                     <i class="fa-solid fa-dollar-sign"></i>
                                 </div>
@@ -161,7 +159,7 @@
                             Reportes
                         </div>
                         <div class="flex items-center h-full w-full text-[#085394]">
-                            <div class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
+                            <div id="reportes" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
                                 <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                     <i class="fa-solid fa-chart-column"></i>
                                 </div>
@@ -177,6 +175,55 @@
             </div>
         </main>
         
+        <script>
+
+            var cliente = document.getElementById('cliente');
+            cliente.addEventListener('click', (e) => {mostrar('cliente')})
+
+            var producto = document.getElementById('producto');
+            producto.addEventListener('click', (e) => {mostrar('producto')})
+            
+            var empleado = document.getElementById('empleado');
+            empleado.addEventListener('click', (e) => {mostrar('empleado')})
+            
+            var proveedor = document.getElementById('proveedor');
+            proveedor.addEventListener('click', (e) => {mostrar('proveedor')})
+            
+            var ventas = document.getElementById('ventas');
+            ventas.addEventListener('click', (e) => {mostrar('ventas')})
+            
+            var reportes = document.getElementById('reportes');
+            reportes.addEventListener('click', (e) => {mostrar('reportes')})
+            
+            function mostrar(id){
+                
+                switch(id){
+                    case 'cliente':
+                        window.location.href = './cliente.html';
+                        break;
+
+                    case 'producto':
+                        window.location.href = './producto.html';
+                        break;
+
+                    case 'empleado':
+                        window.location.href = './empleado.html';
+                        break;
+
+                    case 'proveedor':
+                        window.location.href = './proveedor.html';
+                        break;
+                    
+                    case 'ventas':
+                        window.location.href = './ventas.html';
+                        break;
+
+                    case 'reportes':
+                        window.location.href = './reportes.html';
+                        break;
+                }
+            }
+        </script>
 
         <footer>
 
