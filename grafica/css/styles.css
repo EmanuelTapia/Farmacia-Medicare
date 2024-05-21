@@ -5,7 +5,7 @@ body, html {
 }
 
 .background {
-    background-color: #0087e0;
+    background-image: url(../img/fondo-login.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
