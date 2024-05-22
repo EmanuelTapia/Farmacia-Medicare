@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/images/favicon3.png"/>
-    <link rel="stylesheet" href="styles/style-empleado.css">
+    <link rel="icon" type="image/png" href="img/favicon3.png"/>
+    <link rel="stylesheet" href="css/style-empleado-2.css">
     <title>MEDICARE</title>
 </head>
 <body>
     <header class="navbar">
-        <img src="images/icons/icon-menu.svg" alt="icon-menu" width="30px">
+        <img src="ico/icon-menu.svg" alt="icon-menu" width="30px">
         <section class="navbar-right">
-            <img src="images/btn-perfil.svg" alt="btn-perfil" width="38px">
+            <img src="ico/btn-perfil.svg" alt="btn-perfil" width="38px">
             <p class="name-usuario">Usuario</p>
-            <img src="images/btn-salir.svg" alt="btn-salir" width="40px">
+            <img src="ico/btn-salir.svg" alt="btn-salir" width="40px">
         </section>
     </header>
     <main>
         <section class="section-left">
-            <img src="images/logo.png" alt="Logo Farmacia MEDICARE" width="210px" class="logo">  
-            <p class="p-section-left"><img src="images/icons/icon-menu.svg" alt="" class="icon-menu">Menú</p>
-            <p class="p-section-left"><img src="images/icons/icon-ventas.svg" alt="" class="icon-menu">Ventas</p>
-            <p class="p-section-left-mantenimiento"><img src="images/icons/icon-mantenimiento.svg" alt="" class="icon-menu">Mantenimiento</p>
-            <p class="p-section-left"><img src="images/icons/icon-reportes.svg" alt="" class="icon-menu">Reportes</p> 
+            <img src="./img/logo-blanco.png" alt="Logo Farmacia MEDICARE" width="210px" class="logo">  
+            <p class="p-section-left"><img src="ico/icon-menu.svg" alt="" class="icon-menu">Menú</p>
+            <p class="p-section-left"><img src="ico/icon-ventas.svg" alt="" class="icon-menu">Ventas</p>
+            <p class="p-section-left-mantenimiento"><img src="ico/icon-mantenimiento.svg" alt="" class="icon-menu">Mantenimiento</p>
+            <p class="p-section-left"><img src="ico/icon-reportes.svg" alt="" class="icon-menu">Reportes</p> 
         </section>
         <section class="section-right">
-            <h2 class="title-section-right"><img src="images/btn-empleado.svg" alt="" class="btn-empleado">Empleado</h2>
-            <div class="div-buscar-empleado">
+            <h2 class="title-section-right"><img src="ico/btn-empleado.svg" alt="" class="btn-empleado">Empleado</h2>
+            <!-- <div class="div-buscar-empleado">
                 Buscar Empleado:
                 <input type="text" placeholder="Ingrese el nombre a buscar" class="input-buscar">
-            </div>
-            <div class="div-table">
+            </div> -->
+            <!-- <div class="div-table">
                 <table >
                     <thead class="div-table-thead">
                         <tr>
@@ -102,13 +102,29 @@
                         </tr>
                     </tbody>
                 </table>
+            </div> -->
+            <div class="section-form">
+                <div class="form-col">
+                    <p class="p-form">Nombre:</p>
+                    <input type="text" class="input-form" placeholder="Ingrese el nombre">
+                    <p class="p-form">Apellido:</p>
+                    <input type="text" class="input-form" placeholder="Ingrese el apellido">
+                    <p class="p-form">Cargo:</p>
+                    <input type="text" class="input-form" placeholder="Seleccione una opción">
+                </div>
+                <div class="form-col">
+                    <p class="p-form">Número de teléfono:</p>
+                    <input type="text" class="input-form" placeholder="Ingrese el número de teléfono">
+                    <p class="p-form">Dirección:</p>
+                    <input type="text" class="input-form" placeholder="Ingrese la dirección">
+                </div>
             </div>
             <div class="div-btns">
-                <button class="btn-btns" ><img src="images/btn-reporte.svg" alt="" width="30px" class="img-btn">Reporte</button>
-                <button class="btn-btns"><img src="images/btn-excel.svg" alt="" width="30px" class="img-btn">Excel</button>
-                <a href="empleado-2.html"><button class="btn-btns"><img src="images/btn-nuevodoc.svg" alt="" width="30px" class="img-btn">Nuevo</button></a>
-                <button class="btn-btns"><img src="images/btn-editar.svg" alt="" width="30px" class="img-btn"> Editar</button>
-                <button class="btn-btns"><img src="images/btn-eliminar.svg" alt="" width="30px" class="img-btn">Eliminar</button>
+                <button class="btn-btns" style="background-color: rgb(29, 182, 29); color: white;" ><img src="ico/btn-guardar.svg" alt="" width="30px" class="img-btn">Guardar</button>
+                <button class="btn-btns" style="background-color: rgb(212, 172, 13); color: white;"><img src="ico/btn-actualizar.svg" alt="" width="30px" class="img-btn">Actualizar</button>
+                <a href="empleado.html">
+                <button class="btn-btns" style="background-color: rgb(241, 35, 35); color: white;" ><img src="ico/btn-regresar.svg" alt="" width="30px" class="img-btn">Regresar</button>
+                </a>
             </div>
         </section>
         
