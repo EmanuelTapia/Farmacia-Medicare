@@ -1,1 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: rgb(29, 114, 234);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    color: white;
+}
+
+.name-usuario{
+    margin-right: 40px;
+    margin-left: 10px;
+    font-size: 15px ;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+.section-left{
+    background-color: rgba(23, 119, 228, 0.71);
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    font-size: 21px;
+    height: 859px;
+    margin: 0;
+}
+
+.p-section-left{
+    margin: 0;
+    align-content: center;
+    width: 100%;
+    height: 90px;
+    padding-left: 20px;
+}
+
+.p-section-left-mantenimiento{
+    margin: 0;
+    align-content: center;
+    width: 100%;
+    height: 90px;
+    padding-left: 20px;
+    color: black;
+    border: solid 1px rgb(26, 130, 221);
+    background-color:rgb(39, 143, 241) ;
+}
+
+.logo{
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main section p{
+    margin: 10px;
+    
+    color: white;
+    font-weight: bold;
+}
+
+.icon-menu{
+    margin-right: 10px;
+    vertical-align: middle ;
+}
+
+.section-right{
+    width: 100vw;
+    margin-top: 50px;
+}    
+.title-section-right{
+    color: rgb(72, 132, 230);
+    margin-left: 30px;
+    font-weight: bolder;
+    font-size: 50px;
+    font-weight: 900 ;
+    font-style: normal;
+    
+}
+.btn-empleado{
+    margin-right: 30px;
+    vertical-align: middle ;
+   
+    margin-top: 250px;
+}
+
+.div-buscar-empleado{
+    margin-left: 30px;
+    margin-top: 30px;
+    color:rgb(23, 25, 29) ;
+    font-size: 18px;
+}
+
+.input-buscar{
+    margin-left: 20px;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: rgb(11, 83, 178) ;
+    font-size: 15px;
+    width: 500px;
+    padding: 5px;
+    font-family:"Merriweather" ;
+}
+
+.input-buscar1{
+    margin-left: 160px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.div-table{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.div-table-thead{
+    height: 60px;
+    background-color:rgba(106, 154, 243, 0.116) ;
+    border-bottom: rgb(58, 58, 59) solid 2px;
+}
+
+thead tr td {
+    width: 450px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+tbody{
+    font-size: 15px;
+}
+
+.div-table-body{
+    border: 100px;
+}
+
+.div-table-body tr td{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: rgb(134, 136, 131) solid 1px;
+}
+
+.div-btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px;
+}
+
+.btn-btns{
+    background-color: rgb(216, 227, 232);
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-family:"Merriweather" ;
+    cursor: pointer;
+}
+
+.div-btns1{
+    margin-left: 860px;
+    margin-top: -65px;
+}
+
+.btn-btns1{
+    background-color: rgb(216, 227, 232);
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-family:"Merriweather" ;
+    cursor: pointer;
+}    
+
+.img-btn{
+    margin-right: 20px;
+    vertical-align: middle ;
+}
+
+.btn-btns:hover{
+    background-color: rgb(30, 113, 222);
+    color: white;
+}
+
+.btn-btns1:hover{
+    background-color: rgb(30, 113, 222) ;
+    color: white;
+}
 
