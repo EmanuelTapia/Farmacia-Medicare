@@ -55,7 +55,7 @@
                 <div class="flex h-full p-10 pt-3 space-x-10">
                     <div class="flex flex-col basis-3/12 space-y-5">
                         <div class="flex flex-col basis-4/12 bg-gray-200 border-[0.3em] bg-gray-200 border-gray-300 rounded-xl px-5 pt-2 space-y-3">
-                            <h6 class="text-[2.5vh] font-medium">Datos del Cliente</h6>
+                            <h2 class="text-[2.5vh] font-medium">Datos del Cliente</h2>
                             <form action="" class=" flex flex-col justify-center h-full">
                                 <div class="basis-6/12">
                                     <label for="ident" class="block text-[2vh] text-[#2B78E4]">Identificacion:</label>
@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="flex flex-col h-full basis-8/12 bg-gray-200 border-[0.3em] bg-gray-200 border-gray-300 rounded-xl px-5 pt-2 space-y-3">
-                            <h6 class="text-[2.5vh] font-medium">Datos del Producto</h6>
+                            <h2 class="text-[2.5vh] font-medium">Datos del Producto</h2>
                             <form action="" class="flex flex-col h-full space-y-2">
                                 <div>
                                     <label for="nombre" class="block text-[2vh] text-[#2B78E4]">Producto:</label>
@@ -118,8 +118,115 @@
                         </div>
                     </div>
 
-                    <div class="flex basis-9/12 border-[0.3em] bg-gray-200 border-gray-300 rounded-xl">
+                    <div class="flex flex-col basis-8/12 border-[0.3em] bg-gray-200 border-gray-300 rounded-xl">
+                        <div class="flex justify-star items-center basis-2/12 px-5">
+                            <div class="flex basis-8/12 space-x-[1em]">
+                                <h2 class="text-[2.5vh] font-medium">N° de Serie:</h2>
+                                <input type="text" id="numSerie" placeholder="0000000000000001" class="w-full bg-gray-200  border-2 border-[#2B78E4]    hover:border-[#2B78E4] rounded-lg px-2 text-[2vh] text-gray-500 outline-none h-[4vh] basis-6/12 text-end">
+                            </div>
+                            <div class="flex basis-4/12 justify-end space-x-[1em]">
+                                <button class=" transition hover:scale-125 flex ">
+                                    <img src="./ico/btn-editar.svg" alt="btn-editar" class="w-[5vh] bg-amber-300 rounded-xl">
+                                </button>
+                                <button class=" transition hover:scale-125 flex">
+                                    <img src="./ico/btn-eliminar.svg" alt="btn-eliminar" class="w-[5vh] bg-red-400 rounded-xl">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col basis-8/12 basis--8/12 px-5">
+                            <table class="table-auto">
+                                <thead class="">
+                                  <tr class="border border-4 border-b-slate-900">
+                                    <th class="">N°</th>
+                                    <th class="">Producto</th>
+                                    <th class="">Precio</th>
+                                    <th class="">Cantidad</th>
+                                    <th class="">Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="">
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                    
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                  <tr class="text-center h-[3em] bg-slate-50 border border-b-gris-200 border-4">
+                                    <td class="">1</td>
+                                    <td class="">Paracetamol</td>
+                                    <td class="">4.50</td>
+                                    <td class="">11</td>
+                                    <td class="">151.30</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="flex basis-2/12">
+                            <div class="flex basis-8/12 justify-center items-center ">
+                                <button class=" transition hover:scale-125 flex justify-center basis-8/12">
+                                    <p class="text-slate-50 text-[2.5vh] font-medium px-[4vh] py-1 bg-green-600 rounded-xl" >Generar Venta</p>
+                                </button>
+                                <button class="transition hover:scale-125 flex justify-center basis-4/12">
+                                    <p class="text-slate-50 text-[2.5vh] font-medium px-[4vh] py-1 bg-red-500 rounded-xl " >Cancelar</p>
+                                </button>
+                            </div>
+                            <div class="flex flex-col basis-4/12 justify-center items-end pr-5">
+                                <label for="nombre" class="block text-[2vh] text-[#2B78E4]">Total a Pagar:</label>
+                                <input type="text" id="nombre" placeholder="S/0.00" class="flex bg-gray-200  border-2 border-[#2B78E4]    hover:border-[#2B78E4] rounded-lg text-[2vh] text-center text-gray-500 outline-none h-[4vh]">
+                            </div>
 
+                        </div>
                     </div>
                 </div>
                 
