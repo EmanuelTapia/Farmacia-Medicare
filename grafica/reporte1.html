@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inicio | Farmacia Medicare</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+        <link rel="stylesheet" href="css/reporte.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon"  href="./img/logo.png">
+	</head>
+	<body class="flex h-dvh w-dvh flex-col">
+		
+        <header class="flex justify-center items-center bg-[#3162EE] w-full h-14">
+            <nav class="flex w-screen h-20 mx-4">
+                <div class="flex items-center w-5/6">
+                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
+                </div>
+                <div class="flex w-1/6 justify-end">
+                    <div class="flex items-center mx-10 space-x-2">
+                        <img src="ico/btn-perfil.svg" alt="btn-perfil" width="30em">
+                        <label class="text-slate-50 font-serif text-xl mt-1" for="">Usuario</label>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="./login.html"><img src="ico/btn-salir.svg" alt="btn-salir" width="35px"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex h-full w-full">
+            <div class="flex flex-col bg-[#0823A7] ">
+                <div class="flex justify-center items-center h-[26em] text-slate-500">
+                    <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
+                </div>
+
+                <div class="text-slate-50 font-mono text-xl mt-5 h-full">
+                    <ul class="flex flex-col list-none">
+                        <a href="./menu.html" class="flex p-3 hover:bg-[#4993F7]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
+                        <a href="./ventas.html" class="flex p-3 hover:bg-[#4993F7]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
+                        <a href="./mantenmiento.html" class="flex p-3 hover:bg-[#4993F7]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
+                        <a href="./reportes.html" class="flex p-3 hover:bg-[#4993F7]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                    </ul>
+
+                </div>
+            </div>
+
+            
+            <section class="section-right">
+                <h2 class="title-section-right"><img src="" alt="" class="btn-empleado">Reportes</h2>
+                <div class="div-btns1">
+                    <button class="btn-btns1" ><img src="ico/btn-.svg" alt="" width="30px" class="img-btn">Ganancia</button>
+                </div>
+                <div class="div-buscar-empleado">
+                    Buscar Reporte:
+                    <input type="text" placeholder="Ingrese el dato a buscar" class="input-buscar">
+                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" class="input-buscar1" />
+                </div>
+                <div class="div-table">
+                    <table >
+                        <thead class="div-table-thead">
+                            <tr>
+                                <td>ID Comprobante</td>
+                                <td>Empleado</td>
+                                <td>Cliente</td>
+                                <td>Fecha</td>
+                                <td>Pago total</td>
+                               
+                            </tr>
+                                
+                        </thead>
+                        
+                        <tbody class="div-table-body">
+                            <tr>
+                                <td>1</td>
+                                <td>Emanuel Tapia</td>
+                                <td>Emanuel Tapia</td>
+                                <td>07/05/2024</td>
+                                <td>151.52</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Emanuel Tapia</td>
+                                <td>Emanuel Tapia</td>
+                                <td>07/05/2024</td>
+                                <td>151.52</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Emanuel Tapia</td>
+                                <td>Emanuel Tapia</td>
+                                <td>07/05/2024</td>
+                                <td>151.52</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Emanuel Tapia</td>
+                                <td>Emanuel Tapia</td>
+                                <td>07/05/2024</td>
+                                <td>151.52</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Emanuel Tapia</td>
+                                <td>Emanuel Tapia</td>
+                                <td>07/05/2024</td>
+                                <td>151.52</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Emanuel Tapia</td>
+                                <td>Emanuel Tapia</td>
+                                <td>07/05/2024</td>
+                                <td>151.52</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="div-btns">
+                    <button class="btn-btns" ><img src="ico/btn-.svg" alt="" width="30px" class="img-btn">Gráfico</button>
+                    <button class="btn-btns"><img src="ico/btn-reporte.svg" alt="" width="30px" class="img-btn">Reporte</button>
+                    <button class="btn-btns"><img src="ico/btn-excel.svg" alt="" width="30px" class="img-btn">Excel</button>
+                    <button class="btn-btns"><img src="ico/btn-editar.svg" alt="" width="30px" class="img-btn"> Editar</button>
+                    <button class="btn-btns"><img src="ico/btn-eliminar.svg" alt="" width="30px" class="img-btn">Eliminar</button>
+                </div>
+            </section>
+
+            
+        </main>
+        
+
+        <footer>
+
+        </footer>
+		
+	</body>
+</html>
