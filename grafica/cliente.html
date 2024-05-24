@@ -8,7 +8,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon"  href="./img/logo.png">
 	</head>
-	<body class="flex h-dvh w-dvh flex-col">
+	<body class="flex h-dvh w-dvh flex-col ">
 		
         <header class="flex justify-center items-center bg-[#CF2A27] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
@@ -27,7 +27,7 @@
             </nav>
         </header>
 
-        <main class="flex h-full w-full">
+        <main class="flex h-full w-full ">
             <div class="flex flex-col bg-[#990000] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
@@ -45,14 +45,128 @@
             </div>
 
             <div class= "flex flex-col h-full w-full">
-                <div class="flex items-center h-[15%] space-x-[3vh] pl-7">
+                <div class="flex items-center basis-2/12 space-x-[3vh] pl-7">
                     <img src="./ico/btn-repartidor.svg" alt="imagen-ventas" class="size-[9vh]">
                     <h1 class="font-bold text-[#CF2A27] text-[5vh]">Cliente</h1>
                 </div>
 
-                <div class="flex flex-row h-[10%] w-full space-x-[1em] text-[#CF2A27] px-7">
+                <div class="flex flex-row basis-1/12 w-full space-x-[1em] text-[#CF2A27] px-10">
                     <label for="nombre" class="w-[10em] text-[3vh] text-[#CF2A27] font-medium ">Buscar cliente:</label>
-                    <input type="text" id="numSerie" placeholder="Ingrese el cliente a buscar" class="w-full bg-slate-50  border-2 border-[#CF2A27] rounded-lg px-2 text-[2vh] outline-none h-[5vh]  ">
+                    <input type="text" id="numSerie" placeholder="Ingrese el cliente a buscar" class="w-full bg-slate-50  border-2 border-[#CF2A27] rounded-lg px-2 text-[2vh] outline-none h-[5vh] placeholder-[#CF2A27] ">
+                </div>
+
+                <div class="flex flex-col basis-7/12  px-10  overflow-y-auto">
+                    <table class="table-auto">
+                        <thead class="">
+                          <tr class=" border-b-4 border-slate-900">
+                            <th class="">N°</th>
+                            <th class="">Producto</th>
+                            <th class="">Precio</th>
+                            <th class="">Cantidad</th>
+                            <th class="">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="overflow-y-auto">
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                         
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Paracetamol</td>
+                            <td class="">4.50</td>
+                            <td class="">11</td>
+                            <td class="">151.30</td>
+                            
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+                <div class="grid grid-cols-5 gap-1 place-items-center basis-2/12">
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-reporte.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Reporte</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-excel.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Excel</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-green-600 rounded-xl " ><img src="./ico/btn-nuevodoc.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Nuevo</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-amber-500 rounded-xl " ><img src="./ico/btn-editar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Editar</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-[#CF2A27] rounded-xl " ><img src="./ico/btn-eliminar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Eliminar</p>
+                    </button>
                 </div>
 
             </div>
