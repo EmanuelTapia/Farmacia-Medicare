@@ -12,9 +12,13 @@
 		
         <header class="flex justify-center items-center bg-[#2B78E4] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
+
                 <div class="flex items-center w-5/6">
-                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
-                </div>
+                    <button id="bar" onclick="mostrar()">
+                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
+                    </button>
+                </div> 
+
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
                         <img src="ico/btn-perfil.svg" alt="btn-perfil" width="30em">
@@ -28,7 +32,7 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div class="flex flex-col bg-[#085394] ">
+            <div id="sidebar" class="flex flex-col bg-[#085394] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
@@ -38,26 +42,114 @@
                         <a href="./menu.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
                         <a href="./ventas.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
                         <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reportes.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./reporte.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
             </div>
 
+            <div class= "flex flex-col h-full w-full">
+                <div class="flex items-center basis-2/12 space-x-[3vh] pl-7">
+                    <img src="img/analitica.png" alt="imagen-ventas" class="size-[9vh]">
+                    <h1 class="font-bold text-[#2B78E4] text-[5vh]">Reportes</h1>
+                </div>
+
+                <div class="flex flex-row basis-1/12 w-full space-x-[1em] px-10">
+                    <label for="nombre" class="w-[10em] text-[3vh] text-[#2B78E4] font-medium ">Buscar Reporte:</label>
+                    <input type="text" id="numSerie" placeholder="Ingrese el Dato a Buscar" class="w-full bg-slate-50  border-2 border-[#2B78E4] rounded-lg px-2 text-[2vh] outline-none h-[5vh] placeholder-[#2B78E4] ">
+                </div>
+
+                <br>
+
+                <div class="flex flex-col basis-7/12  px-10  overflow-y-auto">
+                    <table class="table-auto">
+                        <thead class="">
+                          <tr class=" border-b-4 border-slate-900">
+                            <th class="">ID Comprobante</th>
+                            <th class="">Empleado</th>
+                            <th class="">Cliente</th>
+                            <th class="">Fecha</th>
+                            <th class="">Pago Total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="overflow-y-auto">
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">Mario Perez</td>
+                            <td class="">Marco Ramirez</td>
+                            <td class="">07/11/2023</td>
+                            <td class="">151.50</td>
+                            
+                          </tr>
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">2</td>
+                            <td class="">Emanuel Tapia</td>
+                            <td class="">Martha Castro</td>
+                            <td class="">09/03/2024</td>
+                            <td class="">150.00</td>
+                            
+                          </tr>
+                         
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">3</td>
+                            <td class="">Mario Perez</td>
+                            <td class="">Luis Santos</td>
+                            <td class="">01/04/2024</td>
+                            <td class="">302.40</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">4</td>
+                            <td class="">Emanuel Tapia</td>
+                            <td class="">Camila Sanchez</td>
+                            <td class="">09/12/2023</td>
+                            <td class="">87.50</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">5</td>
+                            <td class="">Gabriela Maldonado</td>
+                            <td class="">Pamela Rios</td>
+                            <td class="">03/05/2024</td>
+                            <td class="">12.50</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">6</td>
+                            <td class="">Emanuel Tapia</td>
+                            <td class="">Ursula Gutierrez</td>
+                            <td class="">08/11/2023</td>
+                            <td class="">72.00</td>
+                            
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+                <div class="grid grid-cols-5 gap-1 place-items-center basis-2/12">
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-reporte.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Reporte</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-excel.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Excel</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./img/grafico.png" alt="img-reporte" class="size-[2.5vh] mr-3"> Gráfico</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-amber-500 rounded-xl " ><img src="./ico/btn-editar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Editar</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-[#CF2A27] rounded-xl " ><img src="./ico/btn-eliminar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Eliminar</p>
+                    </button>
+                </div>
+
+            </div>
+
             
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -69,5 +161,7 @@
 
         </footer>
 		
+        <script src="./js/funciones.js"></script>
+
 	</body>
 </html>
