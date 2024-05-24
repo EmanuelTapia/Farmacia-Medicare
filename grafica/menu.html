@@ -14,10 +14,8 @@
             <nav class="flex w-screen h-8 mx-4">
                 
                 <div class="flex items-center w-5/6">
-                    <button id="bar" onclick="mostrar()">
-                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
-                    </button>
-                </div> 
+                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
+                </div>
 
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
@@ -32,7 +30,7 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div id="sidebar" class="flex flex-col bg-[#085394] ">
+            <div class="flex flex-col bg-[#085394] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
@@ -42,7 +40,7 @@
                         <a href="./menu.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
                         <a href="./ventas.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
                         <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reporte.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./reportes.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
@@ -163,7 +161,7 @@
                             Reportes
                         </div>
                         <div class="flex items-center h-full w-full text-[#085394]">
-                            <div id="reportes" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
+                            <div id="reporte" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
                                 <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                     <i class="fa-solid fa-chart-column"></i>
                                 </div>
@@ -196,8 +194,8 @@
             var ventas = document.getElementById('ventas');
             ventas.addEventListener('click', (e) => {mostrar('ventas')})
             
-            var reportes = document.getElementById('reportes');
-            reportes.addEventListener('click', (e) => {mostrar('reportes')})
+            var reportes = document.getElementById('reporte');
+            reportes.addEventListener('click', (e) => {mostrar('reporte')})
             
             function mostrar(id){
                 
@@ -222,18 +220,17 @@
                         window.location.href = './ventas.html';
                         break;
 
-                    case 'reportes':
-                        window.location.href = './reportes.html';
+                    case 'reporte':
+                        window.location.href = './reporte.html';
                         break;
                 }
             }
+
         </script>
 
         <footer>
 
         </footer>
-
-        <script src="./js/funciones.js"></script>
 		
 	</body>
 </html>
