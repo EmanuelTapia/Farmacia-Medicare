@@ -4,7 +4,6 @@
 		<title>Inicio | Farmacia Medicare</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-        <link rel="stylesheet" href="css/style-empleado.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon"  href="./img/logo.png">
@@ -13,9 +12,13 @@
 		
         <header class="flex justify-center items-center bg-[#FF9900] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
+
                 <div class="flex items-center w-5/6">
-                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
-                </div>
+                    <button id="bar" onclick="mostrar()">
+                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
+                    </button>
+                </div> 
+
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
                         <img src="ico/btn-perfil.svg" alt="btn-perfil" width="30em">
@@ -29,7 +32,7 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div class="flex flex-col bg-[#B45F06] ">
+            <div id="sidebar" class="flex flex-col bg-[#B45F06] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
@@ -39,99 +42,127 @@
                         <a href="./menu.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
                         <a href="./ventas.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
                         <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reportes.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./reporte.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
             </div>
 
-            <section class="section-right">
-                <h2 class="title-section-right"><img src="ico/btn-empleado.svg" alt="" class="btn-empleado">Empleado</h2>
-                <div class="div-buscar-empleado">
-                    Buscar Empleado:
-                    <input type="text" placeholder="Ingrese el nombre a buscar" class="input-buscar">
+            <div class= "flex flex-col h-full w-full">
+                <div class="flex items-center basis-2/12 space-x-[3vh] pl-7">
+                    <img src="ico/btn-empleado.svg" alt="imagen-ventas" class="size-[9vh]">
+                    <h1 class="font-bold text-[#FF9900] text-[5vh]">Empleado</h1>
                 </div>
-                <div class="div-table">
-                    <table >
-                        <thead class="div-table-thead">
-                            <tr>
-                                <td>ID</td>
-                                <td>Código</td>
-                                <td>Nombre</td>
-                                <td>Apellido</td>
-                                <td>Celular</td>
-                                <td>Dirección</td>
-                                <td>Cargo</td>
-                            </tr>
-                                
+
+                <div class="flex flex-row basis-1/12 w-full space-x-[1em] px-10">
+                    <label for="nombre" class="w-[10em] text-[3vh] text-[#FF9900] font-medium ">Buscar Empleado:</label>
+                    <input type="text" id="numSerie" placeholder="Ingrese el Empleado a Buscar" class="w-full bg-slate-50  border-2 border-[#FF9900] rounded-lg px-2 text-[2vh] outline-none h-[5vh] placeholder-[#FF9900] ">
+                </div>
+
+                <br>
+
+                <div class="flex flex-col basis-7/12  px-10  overflow-y-auto">
+                    <table class="table-auto">
+                        <thead class="">
+                          <tr class=" border-b-4 border-slate-900">
+                            <th class="">N°</th>
+                            <th class="">Código</th>
+                            <th class="">Nombre</th>
+                            <th class="">Apellido</th>
+                            <th class="">Número de Teléfono</th>
+                            <th class="">Dirección</th>
+                            <th class="">Cargo</th>
+                          </tr>
                         </thead>
-                        
-                        <tbody class="div-table-body">
-                            <tr>
-                                <td>1</td>
-                                <td>MARFER</td>
-                                <td>Mariana</td>
-                                <td>Fernandez</td>
-                                <td>943785785</td>
-                                <td>Santa Clara</td>
-                                <td>Farmacéutico</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>JULPER</td>
-                                <td>Julio</td>
-                                <td>Perez</td>
-                                <td>994753551</td>
-                                <td>Ate Vitarte</td>
-                                <td>Administrador</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>SARMIC</td>
-                                <td>Sara</td>
-                                <td>Michel</td>
-                                <td>992974225</td>
-                                <td>Miraflores</td>
-                                <td>Farmacéutico</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>MARPRA</td>
-                                <td>Maria</td>
-                                <td>Prado</td>
-                                <td>938247843</td>
-                                <td>San Miguel</td>
-                                <td>Farmacéutico</td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>RICGOM</td>
-                                <td>Richard</td>
-                                <td>Gomez</td>
-                                <td>932342377</td>
-                                <td>Miraflores</td>
-                                <td>Administrador</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>EMATAP</td>
-                                <td>Emanuel</td>
-                                <td>Tapia</td>
-                                <td>987654321</td>
-                                <td>Ate Vitarte</td>
-                                <td>Administrador</td>
-                            </tr>
+                        <tbody class="overflow-y-auto">
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">MARFER</td>
+                            <td class="">Mariana</td>
+                            <td class="">Fernández</td>
+                            <td class="">938273824</td>
+                            <td class="">Santa Clara</td>
+                            <td class="">Farmacéutico</td>
+                            
+                          </tr>
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">2</td>
+                            <td class="">JULPER</td>
+                            <td class="">Julio</td>
+                            <td class="">Perez</td>
+                            <td class="">902398231</td>
+                            <td class="">Ate Vitarte</td>
+                            <td class="">Administrador</td>
+                            
+                          </tr>
+                         
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">3</td>
+                            <td class="">SARMIC</td>
+                            <td class="">Sara</td>
+                            <td class="">Michel</td>
+                            <td class="">987312739</td>
+                            <td class="">Miraflores</td>
+                            <td class="">Farmacéutico</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">4</td>
+                            <td class="">MARPRA</td>
+                            <td class="">María</td>
+                            <td class="">Prado</td>
+                            <td class="">932091303</td>
+                            <td class="">San Miguel</td>
+                            <td class="">Farmacéutico</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">5</td>
+                            <td class="">RICGOM</td>
+                            <td class="">Richard</td>
+                            <td class="">Gomez</td>
+                            <td class="">994783283</td>
+                            <td class="">Surquillo</td>
+                            <td class="">Administrador</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">6</td>
+                            <td class="">EMATAP</td>
+                            <td class="">Emanuel</td>
+                            <td class="">Tapia</td>
+                            <td class="">937827483</td>
+                            <td class="">Ate Vitarte</td>
+                            <td class="">Administrador</td>
+                            
+                          </tr>
+                          
                         </tbody>
-                    </table>
+                      </table>
                 </div>
-                <div class="div-btns">
-                    <button class="btn-btns" ><img src="ico/btn-reporte.svg" alt="" width="30px" class="img-btn">Reporte</button>
-                    <button class="btn-btns"><img src="ico/btn-excel.svg" alt="" width="30px" class="img-btn">Excel</button>
-                    <a href="empleado-2.html"><button class="btn-btns"><img src="ico/btn-nuevodoc.svg" alt="" width="30px" class="img-btn">Nuevo</button></a>
-                    <button class="btn-btns"><img src="ico/btn-editar.svg" alt="" width="30px" class="img-btn"> Editar</button>
-                    <button class="btn-btns"><img src="ico/btn-eliminar.svg" alt="" width="30px" class="img-btn">Eliminar</button>
+                <div class="grid grid-cols-5 gap-1 place-items-center basis-2/12">
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-reporte.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Reporte</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-excel.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Excel</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-green-600 rounded-xl " ><img src="./ico/btn-nuevodoc.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Nuevo</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-amber-500 rounded-xl " ><img src="./ico/btn-editar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Editar</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-[#CF2A27] rounded-xl " ><img src="./ico/btn-eliminar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Eliminar</p>
+                    </button>
                 </div>
-            </section>
+
+            </div>
+
             
         </main>
         
@@ -140,5 +171,7 @@
 
         </footer>
 		
+        <script src="./js/funciones.js"></script>
+
 	</body>
 </html>

@@ -4,7 +4,7 @@
 		<title>Inicio | Farmacia Medicare</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-        <link rel="stylesheet" href="css/style-empleado-2.css">
+        <!-- <link rel="stylesheet" href="css/style-empleado-2.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon"  href="./img/logo.png">
@@ -13,9 +13,13 @@
 		
         <header class="flex justify-center items-center bg-[#FF9900] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
+
                 <div class="flex items-center w-5/6">
-                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
-                </div>
+                    <button id="bar" onclick="mostrar()">
+                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
+                    </button>
+                </div> 
+
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
                         <img src="ico/btn-perfil.svg" alt="btn-perfil" width="30em">
@@ -29,7 +33,7 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div class="flex flex-col bg-[#B45F06] ">
+            <div id="sidebar" class="flex flex-col bg-[#B45F06] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
@@ -39,15 +43,24 @@
                         <a href="./menu.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
                         <a href="./ventas.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
                         <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reportes.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./reporte.html" class="flex p-3 hover:bg-[#FF9900]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
             </div>
+            
 
-            <section class="section-right">
+            <div class= "flex flex-col h-full w-full">
+                <div class="flex items-center basis-2/12 space-x-[3vh] pl-7">
+                    <img src="ico/btn-empleado.svg" alt="imagen-ventas" class="size-[9vh]">
+                    <h1 class="font-bold text-[#FF9900] text-[5vh]">Empleado</h1>
+                </div>
+
+
+
+            <!--<section class="section-right">
                 <h2 class="title-section-right"><img src="ico/btn-empleado.svg" alt="" class="btn-empleado">Empleado</h2>
-                <!-- <div class="div-buscar-empleado">
+                 <div class="div-buscar-empleado">
                     Buscar Empleado:
                     <input type="text" placeholder="Ingrese el nombre a buscar" class="input-buscar">
                 </div> -->
@@ -123,7 +136,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div> -->
+                </div>
                 <div class="section-form">
                     <div class="form-col">
                         <p class="p-form">Nombre:</p>
@@ -147,7 +160,10 @@
                     <button class="btn-btns" style="background-color: rgb(241, 35, 35); color: white;" ><img src="ico/btn-regresar.svg" alt="" width="30px" class="img-btn">Regresar</button>
                     </a>
                 </div>
-            </section>
+            </section> -->
+
+
+            </div>
             
             
         </main>
@@ -156,6 +172,8 @@
         <footer>
 
         </footer>
+
+        <script src="./js/funciones.js"></script>
 		
 	</body>
 </html>

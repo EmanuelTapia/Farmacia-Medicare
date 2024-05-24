@@ -3,8 +3,7 @@
 	<head>
 		<title>Inicio | Farmacia Medicare</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-        <link rel="stylesheet" href="css/style-proveedor.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon"  href="./img/logo.png">
@@ -13,9 +12,13 @@
 		
         <header class="flex justify-center items-center bg-[#9900FF] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
+                
                 <div class="flex items-center w-5/6">
-                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
-                </div>
+                    <button id="bar" onclick="mostrar()">
+                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
+                    </button>
+                </div> 
+
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
                         <img src="ico/btn-perfil.svg" alt="btn-perfil" width="30em">
@@ -29,7 +32,7 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div class="flex flex-col bg-[#674EA7] ">
+            <div id="sidebar" class="flex flex-col bg-[#674EA7] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
@@ -38,100 +41,174 @@
                     <ul class="flex flex-col list-none">
                         <a href="./menu.html" class="flex p-3 hover:bg-[#9900FF]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
                         <a href="./ventas.html" class="flex p-3 hover:bg-[#9900FF]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
-                        <a href="./mantenmiento.html" class="flex p-3 hover:bg-[#9900FF]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reportes.html" class="flex p-3 hover:bg-[#9900FF]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#9900FF]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
+                        <a href="./reporte.html" class="flex p-3 hover:bg-[#9900FF]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
             </div>
 
-            <section class="section-right">
-                <h2 class="title-section-right"><img src="ico/btn-repartidor.svg" alt="" class="btn-empleado">Proveedor</h2>
-                <div class="div-buscar-empleado">
-                    Buscar Proveedor:
-                    <input type="text" placeholder="Ingrese el proveedor a buscar" class="input-buscar">
+            <div class= "flex flex-col h-full w-full">
+                <div class="flex items-center basis-2/12 space-x-[3vh] pl-7">
+                    <img src="ico/btn-repartidor.svg" alt="imagen-ventas" class="size-[9vh]">
+                    <h1 class="font-bold text-[#9900FF] text-[5vh]">Proveedor</h1>
                 </div>
-                <div class="div-table">
-                    <table >
-                        <thead class="div-table-thead">
-                            <tr>
-                                <td>ID</td>
-                                <td>Código</td>
-                                <td>Nombre de la Empresa</td>
-                                <td>RUC</td>
-                                <td>Celular</td>
-                                <td>Correo Electrónico</td>
-                                <td>Dirección</td>
-                            </tr>
-                                
+
+                <div class="flex flex-row basis-1/12 w-full space-x-[1em] px-10">
+                    <label for="nombre" class="w-[10em] text-[3vh] text-[#9900FF] font-medium ">Buscar Proveedor:</label>
+                    <input type="text" id="numSerie" placeholder="Ingrese el Proveedor a Buscar" class="w-full bg-slate-50  border-2 border-[#9900FF] rounded-lg px-2 text-[2vh] outline-none h-[5vh] placeholder-[#9900FF] ">
+                </div>
+
+                <br>
+
+                <div class="flex flex-col basis-7/12  px-10  overflow-y-auto">
+                    <table class="table-auto">
+                        <thead class="">
+                          <tr class=" border-b-4 border-slate-900">
+                            <th class="">N°</th>
+                            <th class="">Código</th>
+                            <th class="">Nombre de la Empresa</th>
+                            <th class="">RUC de la Empresa</th>
+                            <th class="">Número de Teléfono</th>
+                            <th class="">Correo Electrónico</th>
+                            <th class="">Dirección</th>
+                          </tr>
                         </thead>
-                        
-                        <tbody class="div-table-body">
-                            <tr>
-                                <td>1</td>
-                                <td>MIF211</td>
-                                <td>Mifarma</td>
-                                <td>21129313131</td>
-                                <td>998323421</td>
-                                <td>mifarma@gmail.com</td>
-                                <td>Santa Clara</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>BOT119</td>
-                                <td>Boticas Perú</td>
-                                <td>11939324231</td>
-                                <td>993223742</td>
-                                <td>boticasperu@gmail.com</td>
-                                <td>Miraflores</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>ARC101</td>
-                                <td>Arcangel</td>
-                                <td>10198291819</td>
-                                <td>932832429</td>
-                                <td>arcangel@gmail.com</td>
-                                <td>Ate Vitarte</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>PER435</td>
-                                <td>PeruFarma</td>
-                                <td>43546946468</td>
-                                <td>994748345</td>
-                                <td>perufarma@gmail.com</td>
-                                <td>La Molina</td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>CRU832</td>
-                                <td>CruzFarma</td>
-                                <td>83278327324</td>
-                                <td>992378325</td>
-                                <td>cruzfarma@gmail.com</td>
-                                <td>Ventanilla</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>DIS563</td>
-                                <td>DISUC</td>
-                                <td>56347634783</td>
-                                <td>994387843</td>
-                                <td>disuc@gmail.com</td>
-                                <td>SJM</td>
-                            </tr>
+                        <tbody class="overflow-y-auto">
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">1</td>
+                            <td class="">MIF211</td>
+                            <td class="">Mifarma</td>
+                            <td class="">21128323982</td>
+                            <td class="">983989244</td>
+                            <td class="">mifarma@gmail.com</td>
+                            <td class="">Santa Clara</td>
+                            
+                          </tr>
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">2</td>
+                            <td class="">BOT119</td>
+                            <td class="">Bóticas Perú</td>
+                            <td class="">119947835345</td>
+                            <td class="">975834675</td>
+                            <td class="">boticasperu@gmail.com</td>
+                            <td class="">Miraflores</td>
+                            
+                          </tr>
+                         
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">3</td>
+                            <td class="">ARC101</td>
+                            <td class="">Arcangel</td>
+                            <td class="">10148937481</td>
+                            <td class="">975346578</td>
+                            <td class="">arcangel@gamil.com</td>
+                            <td class="">Ate Vitarte</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">4</td>
+                            <td class="">PER435</td>
+                            <td class="">Perufarma</td>
+                            <td class="">43538473855</td>
+                            <td class="">974823474</td>
+                            <td class="">perufarma@gmail.com</td>
+                            <td class="">La Molina</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">5</td>
+                            <td class="">CRU832</td>
+                            <td class="">Cruzfarma</td>
+                            <td class="">83287489237</td>
+                            <td class="">947384645</td>
+                            <td class="">cruzfarma@gmail.com</td>
+                            <td class="">Ventanilla</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">6</td>
+                            <td class="">DIS563</td>
+                            <td class="">DISUC</td>
+                            <td class="">56394839749</td>
+                            <td class="">974832748</td>
+                            <td class="">disuc@gmail.com</td>
+                            <td class="">San Juan de Miraflores</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">7</td>
+                            <td class="">TEV237</td>
+                            <td class="">Teva Perú</td>
+                            <td class="">23793758375</td>
+                            <td class="">943728475</td>
+                            <td class="">teva_peru@gmail.com</td>
+                            <td class="">Surco</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">8</td>
+                            <td class="">BAX099</td>
+                            <td class="">Baxleygroup</td>
+                            <td class="">09993785736</td>
+                            <td class="">993754854</td>
+                            <td class="">baxleygroup@gmail.com</td>
+                            <td class="">Callao</td>
+                            
+                          </tr>
+                          
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">9</td>
+                            <td class="">LAB523</td>
+                            <td class="">Laboratorio Saval</td>
+                            <td class="">52337483244</td>
+                            <td class="">958345456</td>
+                            <td class="">lab_saval@gmail.com</td>
+                            <td class="">Lima Metropolitana</td>
+                            
+                          </tr>
+
+                          <tr class="text-center h-[3em]  border-gris-200 border-b-4">
+                            <td class="">10</td>
+                            <td class="">ENF334</td>
+                            <td class="">ENFARMA</td>
+                            <td class="">33437782748</td>
+                            <td class="">978347578</td>
+                            <td class="">enfarma@gmail.com</td>
+                            <td class="">Surquillo</td>
+                            
+                          </tr>
+                          
                         </tbody>
-                    </table>
+                      </table>
                 </div>
-                <div class="div-btns">
-                    <button class="btn-btns" ><img src="ico/btn-reporte.svg" alt="" width="30px" class="img-btn">Reporte</button>
-                    <button class="btn-btns"><img src="ico/btn-excel.svg" alt="" width="30px" class="img-btn">Excel</button>
-                    <button class="btn-btns"><img src="ico/btn-nuevodoc.svg" alt="" width="30px" class="img-btn">Nuevo</button>
-                    <button class="btn-btns"><img src="ico/btn-editar.svg" alt="" width="30px" class="img-btn"> Editar</button>
-                    <button class="btn-btns"><img src="ico/btn-eliminar.svg" alt="" width="30px" class="img-btn">Eliminar</button>
+                <div class="grid grid-cols-5 gap-1 place-items-center basis-2/12">
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-reporte.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Reporte</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-gray-600 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-300 rounded-xl " ><img src="./ico/btn-excel.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Excel</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-green-600 rounded-xl " ><img src="./ico/btn-nuevodoc.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Nuevo</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center ">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-amber-500 rounded-xl " ><img src="./ico/btn-editar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Editar</p>
+                    </button>
+                    <button class=" transition hover:scale-125 flex justify-center">
+                        <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-[#CF2A27] rounded-xl " ><img src="./ico/btn-eliminar.svg" alt="img-reporte" class="size-[2.5vh] mr-3"> Eliminar</p>
+                    </button>
                 </div>
-            </section>
+
+            </div>
+
+            
+
             
         </main>
         
@@ -139,6 +216,8 @@
         <footer>
 
         </footer>
+
+        <script src="./js/funciones.js"></script>
 		
 	</body>
 </html>

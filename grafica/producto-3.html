@@ -4,7 +4,7 @@
 		<title>Inicio | Farmacia Medicare</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-        <link rel="stylesheet" href="css/style-producto-3.css">
+        <!-- <link rel="stylesheet" href="css/style-producto-3.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="icon"  href="./img/logo.png">
@@ -13,9 +13,13 @@
 		
         <header class="flex justify-center items-center bg-[#009E0F] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
+
                 <div class="flex items-center w-5/6">
-                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
-                </div>
+                    <button id="bar" onclick="mostrar()">
+                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
+                    </button>
+                </div> 
+
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
                         <img src="ico/btn-perfil.svg" alt="btn-perfil" width="30em">
@@ -29,7 +33,7 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div class="flex flex-col bg-[#38761D] ">
+            <div id="sidebar" class="flex flex-col bg-[#38761D] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
@@ -45,8 +49,16 @@
                 </div>
             </div>
 
-            <section class="section-right">
-                <h2 class="title-section-right"><img src="img/producto2.png" alt="" class="btn-empleado" width="100">Producto</h2>
+
+            <div class="flex flex-col h-full w-full">
+                
+                <div class="flex items-center h-[15%] space-x-[3vh] pl-7">
+                    <img src="./img/producto2.png" alt="img-producto" class="size-[9vh]">
+                    <h1 class="font-bold text-[#21AE5C] text-[5vh]">Producto</h1>
+                </div>
+
+            <!-- <section class="section-right">
+                <h2 class="title-section-right"><img src="img/producto2.png" alt="" class="btn-empleado" width="100">Producto</h2> -->
                 <!-- <div class="div-buscar-empleado">
                     Buscar Empleado:
                     <input type="text" placeholder="Ingrese el nombre a buscar" class="input-buscar">
@@ -123,7 +135,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div> -->
+                </div>
                 <div class="section-form">
                     <div class="form-col">
                         <p class="p-form">Nombre:</p>
@@ -148,7 +160,9 @@
                     <button class="btn-btns" style="background-color: rgb(241, 35, 35); color: white;" ><img src="ico/btn-regresar.svg" alt="" width="30px" class="img-btn">Regresar</button>
                     </a>
                 </div>
-            </section>
+            </section> -->
+
+            </div>
             
         </main>
         
@@ -156,6 +170,8 @@
         <footer>
 
         </footer>
+
+        <script src="./js/funciones.js"></script>
 		
 	</body>
 </html>

@@ -13,9 +13,13 @@
 		
         <header class="flex justify-center items-center bg-[#009E0F] w-full h-14">
             <nav class="flex w-screen h-8 mx-4">
+
                 <div class="flex items-center w-5/6">
-                    <i class="fa-solid fa-bars fa-lg text-slate-50"></i>
-                </div>
+                    <button id="bar" onclick="mostrar()">
+                        <i  class="fa-solid fa-bars fa-lg text-slate-50 transition hover:scale-125"></i>
+                    </button>
+                </div> 
+
                 <div class="flex w-1/6 justify-end">
                     <div class="flex items-center mx-10 space-x-2">
 
@@ -31,17 +35,17 @@
         </header>
 
         <main class="flex h-full w-full">
-            <div class="flex flex-col bg-[#38761D] ">
+            <div id="sidebar" class="flex flex-col bg-[#38761D] ">
                 <div class="flex justify-center items-center h-[25em] text-slate-50">
                     <a href="./index.html"><img src="./img/logo-blanco.png" alt="img-logo" class="size-[12em]"></a>
                 </div>
 
                 <div class="text-slate-50 font-mono text-xl mt-5 h-full">
                     <ul class="flex flex-col list-none">
-                        <a href="./menu.html" class="flex p-3 hover:bg-[#28CF6E]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
-                        <a href="./ventas.html" class="flex p-3 hover:bg-[#28CF6E]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
-                        <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#28CF6E]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reportes.html" class="flex p-3 hover:bg-[#28CF6E]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./menu.html" class="flex p-3 hover:bg-[#009E0F]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
+                        <a href="./ventas.html" class="flex p-3 hover:bg-[#009E0F]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
+                        <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#009E0F]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
+                        <a href="./reporte.html" class="flex p-3 hover:bg-[#009E0F]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
@@ -77,6 +81,8 @@
         <footer>
 
         </footer>
+
+        <script src="./js/funciones.js"></script>
 		
 	</body>
 </html>
