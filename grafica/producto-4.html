@@ -26,7 +26,7 @@
                         <label class="text-slate-50 font-serif text-xl mt-1" for="">Usuario</label>
                     </div>
                     <div class="flex items-center">
-                        <a href="./login.html"><img src="ico/btn-salir.svg" alt="btn-salir" width="35px"></a>
+                        <a href="./login.html"><img src="ico/btn-salir.svg" alt="btn-salir" width="35px" class="transition hover:scale-125"></a>
                     </div>
                 </div>
             </nav>
@@ -52,10 +52,68 @@
             
             <div class="flex flex-col h-full w-full">
                 
-                <div class="flex items-center h-[15%] space-x-[3vh] pl-7">
+                <div class="flex items-center basis-2/12 space-x-[3vh] pl-7">
                     <img src="./img/producto2.png" alt="img-producto" class="size-[9vh]">
-                    <h1 class="font-bold text-[#21AE5C] text-[5vh]">Producto</h1>
+                    <h1 class="font-bold text-[#21AE5C] text-[5vh]">Producto Nuevo</h1>
                 </div>
+
+                <form action="" class="flex flex-col basis-10/12">
+                    <div class="grid grid-cols-2 gap-x-[8vh] gap-y-[4vh] place-content-center basis-9/12">
+                        <div class="w-9/12 place-self-end">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Tipo de Producto:</label>
+                            <select name="" id="Producto" class="w-full border-[0.4vh]  border-[#21AE5C]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh]">
+                                <option value="" class="">Seleciona Tipo de Producto</option>
+                                <option value="">Tipo 1</option>
+                                <option value="">Tipo 2</option>
+                            </select>
+                        </div>
+                        <div class="w-9/12">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Descripción:</label>
+                            <input type="text" id="" placeholder="Ingrese una Descripción" class="w-full border-[0.4vh]  border-[#21AE5C]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                        </div>
+                        <div class="w-9/12 place-self-end">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Proveedor:</label>
+                            <select name="" id="Producto" class="w-full border-[0.4vh]  border-[#21AE5C]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh]" >
+                                <option value="" class="">Seleciona Proveedor</option>
+                                <option value="">Proveedor 1</option>
+                                <option value="">Proveedor 2</option>
+                            </select>
+                        </div>
+
+                        <div class="w-9/12 ">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Cantidad:</label>
+                            <input type="text" id="" placeholder="Ingrese la Cantidad" class="w-full border-[0.4vh]  border-[#21AE5C]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                        </div>
+                        <div class="w-9/12 place-self-end">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Nombre:</label>
+                            <input type="text" id="" placeholder="Ingrese el Nombre del Producto" class="w-full  border-[0.4vh] border-[#21AE5C]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                        </div>
+                        <div class="w-9/12 ">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Precio de Venta:</label>
+                            <input type="text" id="" placeholder="Ingrese el Precio de Venta" class="w-full border-[0.4vh]  border-[#21AE5C]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                        </div>
+                        <div class="w-9/12 place-self-end">
+                            <label for="ident" class="font-medium block text-[2.3vh] text-[#21AE5C]">Precio de Compra:</label>
+                            <input type="text" id="" placeholder="Ingrese el Precio de Compra" class="w-full  border-[0.4vh] border-[#21AE5C]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="grid grid-cols-5 gap-1 place-items-center basis-3/12">
+                        
+                        <a href="./producto.html" class=" transition hover:scale-125 flex justify-center">
+                            <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-400 rounded-xl " ><img src="./ico/btn-regresar.svg" alt="img-reporte" class="size-[2.5vh] mr-3">Regresar</p>
+                        </a>
+                        <a href=""></a>
+                        <a href="#" class=" transition hover:scale-125 flex justify-center">
+                            <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-green-600 rounded-xl " ><img src="./ico/btn-guardar.svg" alt="btn-guardar" class="size-[2.5vh] mr-3">Guardar</p>
+                        </a>
+                        <a href="" class=" transition hover:scale-125 flex justify-center ">
+                            <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-amber-500 rounded-xl " ><img src="./ico/btn-actualizar.svg" alt="btn-actualizar" class="size-[2.5vh] mr-3">Actualizar</p>
+                        </a>
+                        <a href=""></a>
+                    </div>
+                </form>
 
 
 

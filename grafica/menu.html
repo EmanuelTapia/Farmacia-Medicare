@@ -25,7 +25,7 @@
                         <label class="text-slate-50 font-serif text-xl mt-1" for="">Usuario</label>
                     </div>
                     <div class="flex items-center">
-                        <a href="./login.html"><img src="ico/btn-salir.svg" alt="btn-salir" width="35px"></a>
+                        <a href="./login.html"><img src="ico/btn-salir.svg" alt="btn-salir" width="35px" class="transition hover:scale-125"></a>
                     </div>
                 </div>
             </nav>
@@ -42,7 +42,7 @@
                         <a href="./menu.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-house pr-2"></i>Menú</il></a>
                         <a href="./ventas.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-cart-shopping pr-2"></i>Ventas</il></a>
                         <a href="./mantenimiento.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-screwdriver-wrench pr-2"></i>Mantenimiento</il></a>
-                        <a href="./reportes.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
+                        <a href="./reporte.html" class="flex p-3 hover:bg-[#2B78E4]"><il class="flex"><i class="fa-solid fa-file pr-2"></i>Reportes</il></a>
                     </ul>
 
                 </div>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="flex flex-row items-center justify-start h-full w-full text-[#085394] space-x-[10vh] pl-5 ">
                         
-                        <div id="cliente" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        <a  href="./cliente.html" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] hover:scale-125 transition">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-solid fa-user"></i>
                             </div> 
@@ -105,9 +105,8 @@
                             <div class="h-[30%] w-full flex justify-center items-center">
                                 <p class="font-normal text-[4vh]">Cliente</p>
                             </div>
-                        </div>
-
-                        <div  id="producto" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        </a>
+                        <a  href="./producto.html" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] hover:scale-125 transition">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </div>
@@ -115,9 +114,8 @@
                             <div class="h-[30%] w-full flex justify-center items-center">
                                 <p class="font-normal text-[4vh]">Producto</p>
                             </div>
-                        </div>
-
-                        <div id="empleado" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        </a>
+                        <a  href="./empleado.html" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] hover:scale-125 transition">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-regular fa-address-book"></i>
                             </div>
@@ -125,9 +123,8 @@
                             <div class="h-[30%] w-full flex justify-center items-center">
                                 <p class="font-normal text-[4vh]">Empleado</p>
                             </div>
-                        </div>
-
-                        <div id="proveedor" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh]">
+                        </a>
+                        <a  href="./proveedor.html" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] hover:scale-125 transition">
                             <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                 <i class="fa-regular fa-building"></i>
                             </div>
@@ -135,7 +132,7 @@
                             <div class="h-[30%] w-full flex justify-center items-center">
                                 <p class="font-normal text-[4vh]">Proveedor</p>
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
@@ -147,7 +144,8 @@
                             Ventas
                         </div>
                         <div class="flex items-center h-full w-full text-[#085394]">
-                            <div id="ventas" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
+                            
+                            <a  href="./ventas.html" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] hover:scale-75 transition">
                                 <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                     <i class="fa-solid fa-dollar-sign"></i>
                                 </div>
@@ -155,15 +153,18 @@
                                 <div class="h-[30%] w-full flex justify-center items-center">
                                     <p class="font-normal text-[4vh]">Ventas</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
+                        
+                        
                     </div>
                     <div class="flex flex-col w-6/12">
                         <div>
                             Reportes
                         </div>
                         <div class="flex items-center h-full w-full text-[#085394]">
-                            <div id="reporte" class="box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] ml-5">
+                           
+                            <a  href="./reporte.html" class="flex flex-col box-border border-4 border-[#2B78E4] rounded-xl bg-[#D5E8FF] w-[20vh] h-[20vh] hover:scale-75 transition">
                                 <div class="h-[70%] w-full flex justify-center items-center text-[9vh]">
                                     <i class="fa-solid fa-chart-column"></i>
                                 </div>
@@ -171,7 +172,8 @@
                                 <div class="h-[30%] w-full flex justify-center items-center">
                                     <p class="font-normal text-[4vh]">Reportes</p>
                                 </div>
-                            </div>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -230,7 +232,7 @@
         
         </script>
 
-        <!--script src="./js/funciones.js"></script-->
+        <script src="./js/funciones.js"></script>
 
         <footer>
 
