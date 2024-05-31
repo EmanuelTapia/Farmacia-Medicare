@@ -5,9 +5,7 @@ import com.api.crud.models.UserModel;
 import com.api.crud.repositories.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
+
 
 import java.util.ArrayList;
 import java.util.Optional;
