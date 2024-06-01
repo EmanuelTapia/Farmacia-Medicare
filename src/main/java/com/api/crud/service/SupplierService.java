@@ -44,9 +44,9 @@ public class SupplierService {
         return supplierEntity;
     }
 
-    public Boolean deleteProduct(Long id){
+    public Boolean deleteSupplier(Long id){
         try {
-            productRepository.deleteById(id);
+            supplierRepository.deleteById(id);
             return true;
         }catch (Exception e){
             return false;

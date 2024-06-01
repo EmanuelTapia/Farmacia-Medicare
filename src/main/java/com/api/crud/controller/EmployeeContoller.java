@@ -29,7 +29,7 @@ public class EmployeeContoller {
         return this.employeeService.updateById(request, id);
     }
 
-    @DeleteMapping(path = "/{id_Employee}")
+    @DeleteMapping(path = "/{id_employee}")
     public String deleteById(@PathVariable("id_employee") Long id){
         boolean ok = this.employeeService.deleteEmployee(id);
 
