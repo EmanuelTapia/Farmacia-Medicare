@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.api</groupId>
-	<artifactId>crud</artifactId>
+	<artifactId>FarmaciaMedicare</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>crud</name>
 	<description>Api rest with Java</description>
