@@ -18,7 +18,7 @@ public class CustomerController {
     public ArrayList<CustomerEntity> getCustomer(){
         return this.customerService.getCustomer();
     }
-    
+
     @PostMapping
     public CustomerEntity saveCustomer(@RequestBody CustomerEntity customerEntity){
         return this.customerService.saveCustomer(customerEntity);

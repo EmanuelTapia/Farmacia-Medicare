@@ -1,6 +1,5 @@
 package com.api.crud.controller;
 
-import com.api.crud.entity.CustomerEntity;
 import com.api.crud.entity.EmployeeEntity;
 import com.api.crud.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;

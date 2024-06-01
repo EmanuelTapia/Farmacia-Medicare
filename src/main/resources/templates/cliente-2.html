@@ -57,7 +57,7 @@
                     <div class="grid grid-cols-2 gap-x-[8vh] gap-y-[4vh] place-content-center basis-9/12">
                         <div class="w-9/12 place-self-end">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">Nombre:</label>
-                            <input type="text" id="" placeholder="Ingrese Nombre" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="name" placeholder="Ingrese Nombre" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                         <div class="w-9/12">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">Tipo de Cliente:</label>
@@ -69,27 +69,27 @@
                         </div>
                         <div class="w-9/12 place-self-end">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">Apellido:</label>
-                            <input type="text" id="" placeholder="Ingrese Apellido" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="last_name" placeholder="Ingrese Apellido" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                         <div class="w-9/12">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">Número de Teléfono:</label>
-                            <input type="text" id="" placeholder="Ingrese el Número de Teléfono" class="w-full  border-[0.4vh] border-[#CF2A27]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="phone_number" placeholder="Ingrese el Número de Teléfono" class="w-full  border-[0.4vh] border-[#CF2A27]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                         <div class="w-9/12 place-self-end">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">DNI:</label>
-                            <input type="text" id="" placeholder="Ingrese el DNI" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="dni" placeholder="Ingrese el DNI" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                         <div class="w-9/12">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">RUC:</label>
-                            <input type="text" id="" placeholder="Ingrese el RUC" class="w-full  border-[0.4vh] border-[#CF2A27]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="ruc" placeholder="Ingrese el RUC" class="w-full  border-[0.4vh] border-[#CF2A27]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                         <div class="w-9/12 place-self-end">
                             <label for="ident" class="font-medium block text-[2.3vh] text-[#CF2A27]">Fecha de Nacimiento:</label>
-                            <input type="text" id="" placeholder="Ingrese la Fecha de Nacimiento" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="birthdate" placeholder="Ingrese la Fecha de Nacimiento" class="w-full border-[0.4vh]  border-[#CF2A27]  rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                         <div class="w-9/12">
                             <label for="ident" class=" block font-medium text-[2.3vh] text-[#CF2A27]">Dirección:</label>
-                            <input type="text" id="" placeholder="Ingrese la Dirección" class="w-full  border-[0.4vh] border-[#CF2A27]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
+                            <input type="text" id="address" placeholder="Ingrese la Dirección" class="w-full  border-[0.4vh] border-[#CF2A27]   rounded-lg px-2 text-[2.3vh] text-gray-500 outline-none h-[6vh] ">
                         </div>
                     </div>
                     
@@ -98,8 +98,8 @@
                         <a href="./cliente.html" class=" transition hover:scale-125 flex justify-center">
                             <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-gray-400 rounded-xl " ><img src="../static/ico/btn-regresar.svg" alt="img-reporte" class="size-[2.5vh] mr-3">Regresar</p>
                         </a>
-                        <a href=""></a>
-                        <a href="./cliente-2.html" class=" transition hover:scale-125 flex justify-center">
+                        <button id="btnRegistrar">Registrar</button>
+                        <a id=""  href="./cliente.html" class=" transition hover:scale-125 flex justify-center">
                             <p class="flex items-center text-slate-50 text-[2.5vh] font-medium px-[3vh] py-2 bg-green-600 rounded-xl " ><img src="../static/ico/btn-guardar.svg" alt="btn-guardar" class="size-[2.5vh] mr-3">Guardar</p>
                         </a>
                         <a href="" class=" transition hover:scale-125 flex justify-center ">
@@ -119,8 +119,9 @@
         <footer>
 
         </footer>
+        <script src="../static/js/formularioCustomer.js"></script>
+        <script src="../static/js/funciones.js"></script>
 
-        <script src="./js/funciones.js"></script>
 		
 	</body>
 </html>
