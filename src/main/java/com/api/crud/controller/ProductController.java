@@ -24,7 +24,7 @@ public class ProductController {
         return this.productService.saveProduct(productEntity);
     }
 
-    @GetMapping(path = "/{id_product}")
+    @PutMapping(path = "/{id_product}")
     public ProductEntity updateProductById(@RequestBody ProductEntity request, @PathVariable Long id){
         return this.productService.updateById(request, id);
     }

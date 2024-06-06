@@ -24,7 +24,7 @@ public class CustomerController {
         return this.customerService.saveCustomer(customerEntity);
     }
 
-    @GetMapping(path = "/{id_customer}")
+    @PutMapping(path = "/{id_customer}")
     public CustomerEntity updateCustomerById(@RequestBody CustomerEntity request, @PathVariable Long id){
         return this.customerService.updateById(request, id);
     }
